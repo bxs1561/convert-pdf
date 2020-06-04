@@ -1,0 +1,17 @@
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  let arr = arr1.concat(arr2);
+//   return arr1.concat(arr2).filter(item=>
+// !arr1.includes(item) || !arr2.includes
+
+//   )
+for(let i=0;i<arr.length;i++){
+  if(!arr1.includes(arr[i]) || !arr2.includes(arr[i])){
+    newArr.push(arr[i])
+  }
+}
+return newArr;
+
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
